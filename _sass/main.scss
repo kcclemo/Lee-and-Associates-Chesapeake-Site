@@ -1,0 +1,153 @@
+$primary-color: #98002e;
+$accent-color: #ececec;
+$text-color: #0a0a0a;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+// General
+html {
+    background: black;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    body {
+        background: black;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+
+        main {
+            background: url("/assets/images/baltimore-md.webp");
+            background-position: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+
+            div.overlay {
+                background: $text-color;
+                height: 100%;
+                left: 0;
+                margin: 0;
+                opacity: .5;
+                padding: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                z-index: 1;
+            }
+
+            div.content-wrapper {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                width: 100%;
+                z-index: 2;
+
+                div.content {
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+                    text-align: center;
+
+                    a {
+                        color: white;
+
+                        &:hover {
+                            color: $text-color;
+                        }
+                    }
+
+
+                    div.call-to-action {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        grid-template-rows: repeat(2, 1fr);
+                        grid-column-gap: 16px;
+                        padding: 0 2em 1em;
+
+                        @media only screen and (max-width: 40em) {
+                        grid-template-columns: repeat(1, 1fr);
+                        grid-row-gap: 8px;
+                        }
+                    }
+                }
+
+                h1.title {
+                    color: white;
+                    font-size: 4rem;
+                    text-align: center;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+
+                        &:hover {
+                            color: white;
+                            text-decoration: none;
+                        }
+                    }
+
+                    @media only screen and (max-width: 40em) {
+                        font-size: 2rem;
+                    }
+                }
+            }
+
+            footer {
+                bottom: 0;
+                padding: 0 0 2em 0;
+                position: absolute;
+                width: 100%;
+
+                div.logo-wrapper {
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    max-width: 100%;
+
+                    @media only screen and (max-width: 40em) {
+                        padding: 0 1em;
+                    }
+
+                    img {
+                        @media only screen and (max-width: 40em) {
+                            max-width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// Buttons
+a.primary-button {
+    align-items: center;
+    background-color: $primary-color;
+    border: 0;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color .3s ease;
+
+    &:hover {
+        background: $accent-color;
+        border-color: $accent-color;
+        color: $text-color;
+    }
+}
