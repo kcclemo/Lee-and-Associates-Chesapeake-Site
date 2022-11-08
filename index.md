@@ -1,5 +1,6 @@
 ---
 layout: default
+description: 'Lee and Associates Chesapeake regional office.'
 ---
 
 <h1 class="title"><a href="/">LEE &amp; ASSOCIATES CHESAPEAKE</a></h1>
