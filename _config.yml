@@ -2,7 +2,7 @@
 markdown: kramdown
 
 # URL of the Site
-url: "https://kcclemo.github.io/"
+url: ""
 
 # Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
 baseurl: "Lee-and-Associates-Chesapeake-Site"
@@ -12,19 +12,6 @@ title: Lee & Associates
 
 # Description of the Site
 description: TODO
-
-# URL for the Image of custom Favicon
-# favicon-url: /favicon.ico
-
-# Social Media and Contact
-# phone: 314-210-9336
-# email: operations@bozich.net
-# address: 11780 Manchester Drive, Saint Louis MO
-# instagram_username: bozich.construction
-# inventory: bozichdevelopment
-
-# Google Analytics
-# google-analytics: UA-#########-1
 
 # SASS
 sass:
