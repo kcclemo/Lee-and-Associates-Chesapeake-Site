@@ -5,7 +5,7 @@ markdown: kramdown
 url: "https://kcclemo.github.io/Lee-and-Associates-Chesapeake-Site/"
 
 # Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
-baseurl: "/Lee-and-Associates-Chesapeake-Site"
+baseurl: "Lee-and-Associates-Chesapeake-Site"
 
 # Title of the Site
 title: Lee & Associates

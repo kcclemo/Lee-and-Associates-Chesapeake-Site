@@ -10,5 +10,5 @@ description: 'Lee and Associates Chesapeake regional office.'
     <a href="https://www.lee-associates.com/properties/?company=1356" class="primary-button"><div>COMPANY LISTINGS</div></a>
     <a href="https://www.lee-associates.com/properties/?company=1356&propertyType=1" class="primary-button"><div>AVAILABLE OFFICE PROPERTIES</div></a>
     <a href="https://www.lee-associates.com/properties/?company=1356&propertyType=3" class="primary-button"><div>AVAILABLE INDUSTRIAL PROPERTIES</div></a>
-    <a href="/contact/" class="primary-button"><div>CONTACT US</div></a>
+    <a href="{% if site.baseurl %}{{site.baseurl}}{% else %}{% endif %}/contact/" class="primary-button"><div>CONTACT US</div></a>
 </div>
