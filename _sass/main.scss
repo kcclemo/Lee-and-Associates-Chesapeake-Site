@@ -73,8 +73,8 @@ html {
                         padding: 0 2em 1em;
 
                         @media only screen and (max-width: 40em) {
-                        grid-template-columns: repeat(1, 1fr);
-                        grid-row-gap: 8px;
+                            grid-template-columns: repeat(1, 1fr);
+                            grid-row-gap: 8px;
                         }
                     }
                 }
@@ -102,14 +102,17 @@ html {
 
             footer {
                 bottom: 0;
-                padding: 0 0 2em 0;
+                padding: 0;
                 position: absolute;
+                text-align: center;
                 width: 100%;
+                z-index: 2;
 
                 div.logo-wrapper {
                     align-items: center;
                     display: flex;
                     justify-content: center;
+                    opacity: .5;
                     max-width: 100%;
 
                     @media only screen and (max-width: 40em) {
@@ -122,10 +125,19 @@ html {
                         }
                     }
                 }
+
+                p,
+                a {
+                    color: white;
+                    font-size: .875rem;
+                }
             }
         }
     }
 
+    .nowrap {
+        white-space: nowrap;
+    }
 }
 
 // Buttons
@@ -149,5 +161,10 @@ a.primary-button {
         background: $accent-color;
         border-color: $accent-color;
         color: $text-color;
+    }
+
+    @media only screen and (max-width: 40em) {
+        margin: 8px 0;
+        padding: 10px 0;
     }
 }
