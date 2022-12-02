@@ -1,6 +1,6 @@
 $primary-color: #98002e;
 $accent-color: #ececec;
-$text-color: #0a0a0a;
+$text-color: #3f3f3f;
 $background-color: rgba(0, 0, 0, 0.8);
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
@@ -35,7 +35,8 @@ html {
 
             div.content-wrapper {
                 height: 100%;
-                margin: 0;
+                margin: 0 auto;
+                max-width: 60em;
                 padding: 0;
                 width: 100%;
 
@@ -45,6 +46,7 @@ html {
                     height: 100%;
                     margin: 0;
                     padding: 0;
+                    text-align: center;
                     width: 100%;
 
                     a {
@@ -71,6 +73,8 @@ html {
 
                     // Contact form
                     .ctct-inline-form {
+                        margin: 0 auto;
+                        max-width: 60em;
                         text-align: center;
 
                         .ctct-form-embed.form_0 .ctct-form-defaults {
@@ -148,6 +152,10 @@ html {
             a {
                 color: white;
                 font-size: .875rem;
+            }
+
+            a:hover {
+                color: $text-color;
             }
         }
     }

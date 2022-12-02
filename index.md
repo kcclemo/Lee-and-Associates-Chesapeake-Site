@@ -1,6 +1,6 @@
 ---
 layout: default
-description: 'Lee and Associates Chesapeake regional office.'
+description: 'Our real estate services are tailored to exceed the needs of our local, national, and international clients by combining the latest technology, resources, and market intelligence with over 40 years of expertise to optimize results.'
 ---
 
 <h1 class="title"><a href="https://kcclemo.github.io/Lee-and-Associates-Chesapeake-Site/">LEE &amp; ASSOCIATES CHESAPEAKE</a></h1>

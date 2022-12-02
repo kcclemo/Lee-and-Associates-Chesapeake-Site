@@ -1,9 +1,13 @@
 ---
-layout: default
+layout: compress
 ---
-<div class="content-wrapper">
-    <div class="content">
-        {{ content }}
-    </div>
-</div>
-{% include footer.html %}
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <body>
+        <main>
+            {% include main.html %}
+        </main>
+        {% include footer.html %}
+    </body>
+</html>

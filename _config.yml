@@ -8,10 +8,10 @@ url: ""
 baseurl: ""
 
 # Title of the Site
-title: Lee & Associates
+title: "Lee & Associates"
 
-# Description of the Site
-description: TODO
+# Site settings
+permalink: pretty
 
 # SASS
 sass:
