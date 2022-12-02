@@ -1,60 +1,51 @@
 $primary-color: #98002e;
 $accent-color: #ececec;
 $text-color: #0a0a0a;
+$background-color: rgba(0, 0, 0, 0.8);
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 // General
 html {
-    background: black;
+    background: linear-gradient(0deg, $background-color, $background-color), url("https://kcclemo.github.io/Lee-and-Associates-Chesapeake-Site/assets/images/baltimore-md.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
+    position: relative;
 
     body {
-        background: black;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        justify-content: space-between;
         margin: 0;
         padding: 0;
-        height: 100%;
+        position: relative;
         width: 100%;
 
         main {
-            background: url("https://kcclemo.github.io/Lee-and-Associates-Chesapeake-Site/assets/images/baltimore-md.webp");
-            background-position: fixed;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 100%;
+            margin: 0;
+            padding: 0;
             width: 100%;
-
-            div.overlay {
-                background: $text-color;
-                height: 100%;
-                left: 0;
-                margin: 0;
-                opacity: .5;
-                padding: 0;
-                position: absolute;
-                top: 0;
-                width: 100%;
-                z-index: 1;
-            }
 
             div.content-wrapper {
                 height: 100%;
                 margin: 0;
                 padding: 0;
-                position: absolute;
                 width: 100%;
-                z-index: 2;
 
                 div.content {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
                     margin: 0;
                     padding: 0;
-                    position: relative;
-                    text-align: center;
+                    width: 100%;
 
                     a {
                         color: white;
@@ -75,6 +66,32 @@ html {
                         @media only screen and (max-width: 40em) {
                             grid-template-columns: repeat(1, 1fr);
                             grid-row-gap: 8px;
+                        }
+                    }
+
+                    // Contact form
+                    .ctct-inline-form {
+                        text-align: center;
+
+                        .ctct-form-embed.form_0 .ctct-form-defaults {
+                            background: transparent;
+                            
+                            .ctct-form-header {
+                                color: white;
+                                font-size: 3rem;
+                            }
+                        }
+
+
+                        .ctct-form-embed.form_0 .ctct-form-defaults .ctct-form-text,
+                        .ctct-form-embed.form_0 .ctct-form-custom .ctct-form-label,
+                        .ctct-form-embed.form_0 .ctct-form-custom .ctct-form-listname,
+                        .ctct-form-embed.form_0 .ctct-form-custom .ctct-form-lists-legend,
+                        .ctct-form-embed.form_0 .ctct-form-custom .ctct-form-date-slash,
+                        .ctct-form-embed.form_0 .ctct-form-defaults .ctct-gdpr-text,
+                        .ctct-form-embed.form_0 .ctct-form-defaults .ctct-gdpr-text .ctct-form-footer-link,
+                        .ctct-form-embed.form_0 .ctct-form-defaults .ctct-gdpr-text .ctct-form-footer-privacy-link {
+                            color: white;
                         }
                     }
                 }
@@ -99,38 +116,38 @@ html {
                     }
                 }
             }
+        }
 
-            footer {
-                bottom: 0;
-                padding: 0;
-                position: absolute;
-                text-align: center;
-                width: 100%;
-                z-index: 2;
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 1em 0;
+            text-align: center;
+            width: 100%;
 
-                div.logo-wrapper {
-                    align-items: center;
-                    display: flex;
-                    justify-content: center;
-                    opacity: .5;
-                    max-width: 100%;
+            div.logo-wrapper {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                opacity: 0.5;
+                max-width: 100%;
 
+                @media only screen and (max-width: 40em) {
+                    padding: 0 1em;
+                }
+
+                img {
                     @media only screen and (max-width: 40em) {
-                        padding: 0 1em;
-                    }
-
-                    img {
-                        @media only screen and (max-width: 40em) {
-                            max-width: 80%;
-                        }
+                        max-width: 80%;
                     }
                 }
+            }
 
-                p,
-                a {
-                    color: white;
-                    font-size: .875rem;
-                }
+            p,
+            a {
+                color: white;
+                font-size: .875rem;
             }
         }
     }
